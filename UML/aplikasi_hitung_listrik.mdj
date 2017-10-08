@@ -434,7 +434,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+setNamaDevice(String nama)",
+											"text": "+setNamaDevice(nama : String)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -463,7 +463,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+setKwh(int kwh)",
+											"text": "+setKwh(kwh : int)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -492,7 +492,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+setDurasi(double durasi)",
+											"text": "+setDurasi(durasi : double)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -958,7 +958,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+setTdl(int tdl)",
+											"text": "+setTdl(tdl : int)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -1816,7 +1816,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+setPulsa(int pulsa)",
+											"text": "+setPulsa(pulsa : int)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2761,7 +2761,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+inputDevice(int jmlDevice, Device device)",
+											"text": "+inputDevice(jmlDevice : int, device : Device)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -3684,11 +3684,11 @@
 									"_parent": {
 										"$ref": "AAAAAAFe8KPH+P93HJ0="
 									},
-									"name": "String nama",
+									"name": "nama ",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
+									"type": "String",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -3716,11 +3716,11 @@
 									"_parent": {
 										"$ref": "AAAAAAFe8KR75/9+2+Y="
 									},
-									"name": "int kwh",
+									"name": "kwh ",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
+									"type": "int",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -3748,11 +3748,11 @@
 									"_parent": {
 										"$ref": "AAAAAAFe8KSOe/+F6tY="
 									},
-									"name": "double durasi",
+									"name": "durasi ",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
+									"type": "double",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -3923,11 +3923,11 @@
 									"_parent": {
 										"$ref": "AAAAAAFe8J91J/89N/w="
 									},
-									"name": "int tdl",
+									"name": "tdl ",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
+									"type": "int",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -4195,11 +4195,11 @@
 									"_parent": {
 										"$ref": "AAAAAAFe8MZIvgHrIwg="
 									},
-									"name": "int pulsa",
+									"name": "pulsa ",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
+									"type": "int",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -4585,11 +4585,11 @@
 									"_parent": {
 										"$ref": "AAAAAAFe+gwszhbxdW0="
 									},
-									"name": "int jmlDevice",
+									"name": "jmlDevice ",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
+									"type": "int",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -4601,11 +4601,13 @@
 									"_parent": {
 										"$ref": "AAAAAAFe+gwszhbxdW0="
 									},
-									"name": "Device device",
+									"name": "device ",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
+									"type": {
+										"$ref": "AAAAAAFe8JMiXv6P8YU="
+									},
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
