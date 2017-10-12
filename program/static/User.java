@@ -5,8 +5,7 @@ public class User extends PLN{
 	private String nama;
 	private String alamat;
 	private int jmlDevice;
-	private int pulsa;
-	Device[] devArr;
+	private Device[] devArr;
 
 	public User() {
 		this.nama = "";
@@ -41,10 +40,6 @@ public class User extends PLN{
 			devArr[i].durasi = inDurasi;
 			System.out.println(" ");
 		}
-	}
-
-	public void setPulsa(int pulsa) {
-		this.pulsa = pulsa;
 	}
 
 	public String getNama(){

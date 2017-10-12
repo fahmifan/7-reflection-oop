@@ -205,7 +205,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "-namaDevice: String",
+											"text": "#namaDevice: String",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -234,7 +234,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "-kwhDevice: int",
+											"text": "#kwhDevice: int",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -263,7 +263,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "-durasi: double",
+											"text": "#durasi: double",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -318,7 +318,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+Device(tdListrik: int, namaDevice: String, kwhDevice: int, durasi: double)",
+											"text": "+Device(namaDevice: String, kwhDevice: int, durasi: double)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2285,36 +2285,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "-device: ArrayList<Device>",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAFe+7emLmB3Evs=",
-											"_parent": {
-												"$ref": "AAAAAAFe8M1+JwSKsuk="
-											},
-											"model": {
-												"$ref": "AAAAAAFe+7elymBxM70="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;13;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 229,
-											"top": 602,
-											"width": 547.3203125,
-											"height": 13,
-											"autoResize": false,
-											"underline": false,
-											"text": "-pulsa: int",
+											"text": "-devArr: Device",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2332,7 +2303,7 @@
 									"left": 224,
 									"top": 537,
 									"width": 557.3203125,
-									"height": 83,
+									"height": 68,
 									"autoResize": false
 								},
 								{
@@ -2345,6 +2316,35 @@
 										"$ref": "AAAAAAFe8M1+IASCHmA="
 									},
 									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFe/KF9KTdHUW4=",
+											"_parent": {
+												"$ref": "AAAAAAFe8M1+KQSLg74="
+											},
+											"model": {
+												"$ref": "AAAAAAFe/KF8eTdBbKY="
+											},
+											"visible": true,
+											"enabled": true,
+											"lineColor": "#000000",
+											"fillColor": "#ffffff",
+											"fontColor": "#000000",
+											"font": "Arial;13;0",
+											"showShadow": true,
+											"containerChangeable": false,
+											"containerExtending": false,
+											"left": 229,
+											"top": 610,
+											"width": 547.3203125,
+											"height": 13,
+											"autoResize": false,
+											"underline": false,
+											"text": "+User()",
+											"horizontalAlignment": 0,
+											"verticalAlignment": 5,
+											"wordWrap": false
+										},
 										{
 											"_type": "UMLOperationView",
 											"_id": "AAAAAAFe8M+9GgYx8uI=",
@@ -2369,7 +2369,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+User(tdl: int, namaDevice: String, kwhDevice: int, durasi: double, nama: String, alamat: String)",
+											"text": "+User(nama: String, alamat: String)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2398,7 +2398,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+inputDevice(jmlDevice : int, device : Device)",
+											"text": "+inputDevice()",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2463,35 +2463,6 @@
 										},
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAFe+7XaUF99WCM=",
-											"_parent": {
-												"$ref": "AAAAAAFe8M1+KQSLg74="
-											},
-											"model": {
-												"$ref": "AAAAAAFe+7XZtF93grQ="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;13;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 229,
-											"top": 685,
-											"width": 547.3203125,
-											"height": 13,
-											"autoResize": false,
-											"underline": false,
-											"text": "+hitungEstimasi(jmlDevice: int, device: Device): int",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
-										},
-										{
-											"_type": "UMLOperationView",
 											"_id": "AAAAAAFe8NIBighabpY=",
 											"_parent": {
 												"$ref": "AAAAAAFe8M1+KQSLg74="
@@ -2509,7 +2480,7 @@
 											"containerChangeable": false,
 											"containerExtending": false,
 											"left": 229,
-											"top": 700,
+											"top": 685,
 											"width": 547.3203125,
 											"height": 13,
 											"autoResize": false,
@@ -2530,7 +2501,7 @@
 									"containerChangeable": false,
 									"containerExtending": false,
 									"left": 224,
-									"top": 620,
+									"top": 605,
 									"width": 557.3203125,
 									"height": 98,
 									"autoResize": false
@@ -3111,7 +3082,7 @@
 								"$ref": "AAAAAAFe8JMiXv6P8YU="
 							},
 							"name": "namaDevice",
-							"visibility": "private",
+							"visibility": "protected",
 							"isStatic": false,
 							"isLeaf": false,
 							"type": "String",
@@ -3129,7 +3100,7 @@
 								"$ref": "AAAAAAFe8JMiXv6P8YU="
 							},
 							"name": "kwhDevice",
-							"visibility": "private",
+							"visibility": "protected",
 							"isStatic": false,
 							"isLeaf": false,
 							"type": "int",
@@ -3147,7 +3118,7 @@
 								"$ref": "AAAAAAFe8JMiXv6P8YU="
 							},
 							"name": "durasi",
-							"visibility": "private",
+							"visibility": "protected",
 							"isStatic": false,
 							"isLeaf": false,
 							"type": "double",
@@ -3177,22 +3148,6 @@
 									"_parent": {
 										"$ref": "AAAAAAFe8JuKov7a1SA="
 									},
-									"name": "tdListrik",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "int",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe8KJmvP9VyyA=",
-									"_parent": {
-										"$ref": "AAAAAAFe8JuKov7a1SA="
-									},
 									"name": "namaDevice",
 									"visibility": "public",
 									"isStatic": false,
@@ -3205,7 +3160,7 @@
 								},
 								{
 									"_type": "UMLParameter",
-									"_id": "AAAAAAFe8KJmvP9WChM=",
+									"_id": "AAAAAAFe8KJmvP9VyyA=",
 									"_parent": {
 										"$ref": "AAAAAAFe8JuKov7a1SA="
 									},
@@ -3221,7 +3176,7 @@
 								},
 								{
 									"_type": "UMLParameter",
-									"_id": "AAAAAAFe+f2koBCBfIU=",
+									"_id": "AAAAAAFe8KJmvP9WChM=",
 									"_parent": {
 										"$ref": "AAAAAAFe8JuKov7a1SA="
 									},
@@ -4122,29 +4077,13 @@
 							"_parent": {
 								"$ref": "AAAAAAFe8M1+IASCHmA="
 							},
-							"name": "device",
+							"name": "devArr",
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
-							"type": "ArrayList<Device>",
-							"isReadOnly": false,
-							"isOrdered": false,
-							"isUnique": false,
-							"isDerived": false,
-							"aggregation": "none",
-							"isID": false
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAFe+7elymBxM70=",
-							"_parent": {
-								"$ref": "AAAAAAFe8M1+IASCHmA="
+							"type": {
+								"$ref": "AAAAAAFe8JMiXv6P8YU="
 							},
-							"name": "pulsa",
-							"visibility": "private",
-							"isStatic": false,
-							"isLeaf": false,
-							"type": "int",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -4154,6 +4093,20 @@
 						}
 					],
 					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFe/KF8eTdBbKY=",
+							"_parent": {
+								"$ref": "AAAAAAFe8M1+IASCHmA="
+							},
+							"name": "User",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
 						{
 							"_type": "UMLOperation",
 							"_id": "AAAAAAFe8M+8mAYoQeU=",
@@ -4171,70 +4124,6 @@
 									"_parent": {
 										"$ref": "AAAAAAFe8M+8mAYoQeU="
 									},
-									"name": "tdl",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "int",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe8NDA0AcT61k=",
-									"_parent": {
-										"$ref": "AAAAAAFe8M+8mAYoQeU="
-									},
-									"name": "namaDevice",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "String",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe8NDA0AcUHDI=",
-									"_parent": {
-										"$ref": "AAAAAAFe8M+8mAYoQeU="
-									},
-									"name": "kwhDevice",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "int",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe8NDA0QcVzpE=",
-									"_parent": {
-										"$ref": "AAAAAAFe8M+8mAYoQeU="
-									},
-									"name": "durasi",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "double",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe8NEO6wd1Fg4=",
-									"_parent": {
-										"$ref": "AAAAAAFe8M+8mAYoQeU="
-									},
 									"name": "nama",
 									"visibility": "public",
 									"isStatic": false,
@@ -4247,7 +4136,7 @@
 								},
 								{
 									"_type": "UMLParameter",
-									"_id": "AAAAAAFe8NEO7Qd2dog=",
+									"_id": "AAAAAAFe8NDA0AcT61k=",
 									"_parent": {
 										"$ref": "AAAAAAFe8M+8mAYoQeU="
 									},
@@ -4276,42 +4165,6 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
-							"parameters": [
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe+g0MJxdAAfs=",
-									"_parent": {
-										"$ref": "AAAAAAFe+gwszhbxdW0="
-									},
-									"name": "jmlDevice ",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "int",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe+g0MJxdBZCo=",
-									"_parent": {
-										"$ref": "AAAAAAFe+gwszhbxdW0="
-									},
-									"name": "device ",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": {
-										"$ref": "AAAAAAFe8JMiXv6P8YU="
-									},
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								}
-							],
 							"concurrency": "sequential",
 							"isQuery": false,
 							"isAbstract": false
@@ -4368,71 +4221,6 @@
 									"isStatic": false,
 									"isLeaf": false,
 									"type": "String",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "return"
-								}
-							],
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						},
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFe+7XZtF93grQ=",
-							"_parent": {
-								"$ref": "AAAAAAFe8M1+IASCHmA="
-							},
-							"name": "hitungEstimasi",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"parameters": [
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe+7cOj2AEtyo=",
-									"_parent": {
-										"$ref": "AAAAAAFe+7XZtF93grQ="
-									},
-									"name": "jmlDevice",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "int",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe+7cOj2AFUkg=",
-									"_parent": {
-										"$ref": "AAAAAAFe+7XZtF93grQ="
-									},
-									"name": "device",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": {
-										"$ref": "AAAAAAFe8JMiXv6P8YU="
-									},
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFe+7cOj2AGWFo=",
-									"_parent": {
-										"$ref": "AAAAAAFe+7XZtF93grQ="
-									},
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "int",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
