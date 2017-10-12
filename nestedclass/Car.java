@@ -1,45 +1,88 @@
-public class Car {
-	private int speed = 0;
-
-	//inner class
-	private class Engine {
-
-		public void startEngine() {
-			System.out.println("Engine started");
-		}
-
-		public void stopEngine() {
-			System.out.println("Engine stopped");
-		}
+abstract class AnonymousInner 
+	{
+	   public abstract void stop();
 	}
 
-	
-	
-	public void move() {
-		Engine e = new Engine();
-		e.startEngine();
-		System.out.println("Car moved");
-	}
+//main class Car
+public class Car 
+	{
+		//instance variable
+		private int speed = 0;
 
-	public void stop() {
-		System.out.println("Car stopped");
-	}
+		//Inner Class
+		private class Engine 
+			{
+				//Inner Class method
+				public void startEngine() 
+					{
+						System.out.println("Engine started");
+					}
 
-	public void addSpeed(int speed) {
-		this.speed += speed;
-	}
+				//Inner Class method
+				public void stopEngine() 
+					{
+						System.out.println("Engine stopped");
+					}
+			}
 
-	public int currentSpeed() {
-		return this.speed;
-	}
+		//main Class method
+		public void move() 
+			{
+				//instansiasi object Inner class
+				Engine e = new Engine();
 
-	public static void main(String[] args) {
-		Car c = new Car();
-		Car.Engine e = c.new Engine();
-		c.addSpeed(5);
-		c.move();
-		System.out.println("Current Speed : " + c.currentSpeed());
-		e.stopEngine();
-		c.stop();
+				//object Inner class memanggil method Inner class
+				e.startEngine();
+				System.out.println("Car moved");
+			}
+
+		//main Class method
+		public void stop() 
+			{
+				System.out.println("Car stopped");
+			}
+
+		//main Class method
+		public void addSpeed(int speed) 
+			{
+				this.speed += speed;
+			}
+
+		//main Class method
+		public int currentSpeed() 
+			{
+				return this.speed;
+			}
+
+		//mai Class main method
+		public static void main(String[] args) 
+			{
+				//instansiasi object main class
+				Car c = new Car();
+
+				//instansiasi object Inner class
+				Car.Engine e = c.new Engine();
+
+				//object main class memanggil method main class
+				c.addSpeed(5);
+				c.move();
+				System.out.println("Current Speed menggunakan method Main Class : " + c.currentSpeed());
+
+				//Anonymous Inner Class
+				AnonymousInner anon = new AnonymousInner()
+					{
+						//method Main class diOverride oleh method Anonymous Inner Class
+						public void stop()
+							{
+								System.out.println("Car Stopped (Anonymous Inner Class)");
+							}
+
+					};
+				anon.stop();
+
+				
+				//object Inner class memanggil method Inner class
+				e.stopEngine();
+				c.stop();
+			}
 	}
-}
