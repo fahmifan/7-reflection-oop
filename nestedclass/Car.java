@@ -32,10 +32,21 @@ public class Car
 			}
 
 		//main Class method
-		public void stop() 
-			{
-				System.out.println("Car stopped");
+		public void stop() {
+			this.speed = 0;
+			Car c = new Car();
+			
+			//method local inner class
+			class StopCar {
+				public void carStop() {
+					System.out.println("Current Speed : " + c.currentSpeed());
+					System.out.println("Car stopped");
+				}
 			}
+
+			StopCar sc = new StopCar();
+			sc.carStop();
+		}
 
 		//main Class method
 		public void addSpeed(int speed) 
@@ -75,12 +86,16 @@ public class Car
 							}
 
 					};
+				e.stopEngine();
+
 				//object Anonymous Inner class memanggil method stop() yang telah dioverride
 				anon.stop();
 				System.out.println();
 				
 				//object Inner class memanggil method Inner class
-				e.stopEngine();
+				
+				//menggunakan method local inner class;
 				c.stop();
+				System.out.println("(Menggunakan Method Local Inner Class)");
 			}
 	}
