@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // package static;
 import java.util.Scanner;
 
@@ -41,29 +40,6 @@ public class User extends PLN{
 			devArr[i].durasi = inDurasi;
 			System.out.println(" ");
 		}
-=======
-package static;
-
-public class User{
-	private String nama;
-	private String alamat;
-	private int jmlDevice;
-
-	
-
-	public User(int tdl, String namaDevice, int kwhDevice, double durasi, String nama, String alamat){
-		this.tdl=tdl;
-		this.namaDevice=namaDevice;
-		this.kwhDevice=kwhDevice;
-		this.durasi=durasi;
-		this.nama=nama;
-		this.alamat=alamat;
-	}
-
-	public inputDevice(int jmlDevice, Device device){
-		this.jmlDevice=jmlDevice;
-		this.device=device;
->>>>>>> 62a4914ac9f655d79266e0ee4b3b8918f7e3dcff
 	}
 
 	public String getNama(){
@@ -74,7 +50,6 @@ public class User{
 		return alamat;
 	}
 
-<<<<<<< HEAD
 	public void cetakDevice() {
 		for(int i = 0; i < this.jmlDevice; i++) {
 			System.out.println(devArr[i].info() + "\n");
@@ -87,10 +62,3 @@ public class User{
 	}
 }
 
-=======
-	public String info(){
-		return info;
-	}
-	
-}
->>>>>>> 62a4914ac9f655d79266e0ee4b3b8918f7e3dcff
