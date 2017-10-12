@@ -1,8 +1,3 @@
-abstract class AnonymousInner 
-	{
-	   public abstract void stop();
-	}
-
 //main class Car
 public class Car 
 	{
@@ -66,6 +61,8 @@ public class Car
 				//object main class memanggil method main class
 				c.addSpeed(5);
 				c.move();
+				System.out.println();
+
 				System.out.println("Current Speed menggunakan method Main Class : " + c.currentSpeed());
 
 				//Anonymous Inner Class
@@ -78,8 +75,9 @@ public class Car
 							}
 
 					};
+				//object Anonymous Inner class memanggil method stop() yang telah dioverride
 				anon.stop();
-
+				System.out.println();
 				
 				//object Inner class memanggil method Inner class
 				e.stopEngine();
