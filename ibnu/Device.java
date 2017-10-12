@@ -1,4 +1,4 @@
-package hitungListrik;
+// package hitungListrik;
 public class Device {
 	protected String namaDevice;
 	protected int kwhDevice;

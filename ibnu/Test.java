@@ -1,6 +1,6 @@
-import hitungListrik.PLN;
-import hitungListrik.Device;
-import hitungListrik.User;
+// import hitungListrik.PLN;
+// import hitungListrik.Device;
+// import hitungListrik.User;
 import java.util.Scanner;
 public class Test {
 	public static void main(String[] args) {
